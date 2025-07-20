@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Div Creation</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px 0;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Div Creation</h2>
+  <button id="createBox">Create New Box</button>
+  <div id="boxContainer"></div>
+
+  <script>
+    const createBoxBtn = document.getElementById("createBox");
+    const boxContainer = document.getElementById("boxContainer");
+    createBoxBtn.addEventListener("click", () => {
+      const newDiv = document.createElement("div");
+      newDiv.className = "box";
+      newDiv.innerText = "New Box";
+      boxContainer.appendChild(newDiv);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dark Theme Toggle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-theme {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>Dark Theme Toggle</h2>
+  <button id="toggleTheme">Toggle Dark Theme</button>
+
+  <script>
+    const toggleThemeBtn = document.getElementById("toggleTheme");
+    toggleThemeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+    });
+  </script>
+</body>
+</html>

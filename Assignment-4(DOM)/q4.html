@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dynamic CSS Styling</title>
+  <style>
+    #box-style {
+      border: 1px solid #000;
+      padding: 10px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h2>Dynamic CSS Styling</h2>
+
+  <label>Color: <input type="text" id="colorInput" placeholder="e.g. red" /></label><br/>
+  <label>Font Size (px): <input type="number" id="sizeInput" placeholder="e.g. 20" /></label><br/>
+  <label>Font Weight: <input type="text" id="weightInput" placeholder="e.g. bold or 500" /></label><br/><br/>
+  <button id="applyStyle">Apply Style</button>
+
+  <div id="box-style">Stylable Box</div>
+
+  <script>
+    const applyBtn = document.getElementById("applyStyle");
+    const box = document.getElementById("box-style");
+
+    applyBtn.addEventListener("click", () => {
+      const color = document.getElementById("colorInput").value;
+      const size = document.getElementById("sizeInput").value;
+      const weight = document.getElementById("weightInput").value;
+
+      box.style.color = color;
+      box.style.fontSize = size + "px";
+      box.style.fontWeight = weight;
+    });
+  </script>
+</body>
+</html>

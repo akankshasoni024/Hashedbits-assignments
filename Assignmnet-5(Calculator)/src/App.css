@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+label {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 18px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.operators {
+  margin: 20px 0;
+}
+
+.operators button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #dcdcdc;
+  transition: background-color 0.2s ease;
+}
+
+.operators button:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+button[type='submit'] {
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+.output {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
