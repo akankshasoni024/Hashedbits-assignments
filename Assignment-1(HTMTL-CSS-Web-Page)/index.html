@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Page</title>
+  <title>Learning Land</title>
   <link rel="icon" href="../images/logo.png" type="image/png" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -12,17 +12,32 @@
 <body>
   <header>
     <div class="header-container">
-      <div>
-        <img class="logo-image" src="../images/logo.png" alt="My Web Page" />
+      <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 20px;">
+        <img src="../images/logo.png" alt="My Web Page" style="width: 50px; height: auto;" />
+        <span style="font-size: 24px; font-weight: bold; color: #333;">Learning Land</span>
       </div>
+      
       <div class="social-links">
-        <a href="#" class="link">Home</a>
-        <a href="#" class="link">About</a>
-        <a href="#" class="link">Services</a>
+        <a href="https://www.linkedin.com/in/akanksha-soni/" class="link" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+        <a href="https://github.com/akankshasoni" class="link" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a href="mailto:akanksha.soni@example.com" class="link">
+          Gmail
+        </a>
       </div>
+      
     </div>
   </header>
-
+  <nav class="menu-bar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  
   <div class="main-container">
     <aside>
       <ul class="list">
@@ -39,11 +54,24 @@
       </ul>
     </aside>
     <main class="content">
-      <h1 class="title">HTML</h1>
-      <img class="main-image" src="../images/logo.png" alt="HTML" />
-      <p class="description">HTML (HyperText Markup Language) is the code that is used to structure a web page and its
-        content. This article provides a basic understanding of HTML and its functionality, and shows you how to create
-        the basic content for your first website.</p>
+      <div class="card-container">
+        <div class="card">
+          <h2>HTML Basics</h2>
+          <img src="../images/logo.png" alt="HTML" />
+          <p>Learn the building blocks of the web with HTML5.</p>
+        </div>
+        <div class="card">
+          <h2>CSS Styling</h2>
+          <img src="../images/logo.png" alt="CSS" />
+          <p>Style your pages beautifully using CSS3.</p>
+        </div>
+        <div class="card">
+          <h2>JavaScript</h2>
+          <img src="../images/logo.png" alt="JS" />
+          <p>Add interactivity and power using JavaScript.</p>
+        </div>
+      </div>
+      
     </main>
   </div>
 
